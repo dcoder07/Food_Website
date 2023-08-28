@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../dist/output.css" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body class="text-gray-600">
+
+    <div class="grid md:grid-cols-6">
+        <div class="md:col-span-1">
+            <nav class="md:grid">
+                <div class="p-5 flex justify-between ">
+                    <h1
+                        class="font-bold uppercase border-b border-gray-100 hover:text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-600">
+                        <a href="/">Food Ninja</a>
+                    </h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 md:hidden" id="burger">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+
+                </div>
+
+                <div class="flex justify-end md:block">
+                    <ul class="ml-5 hidden md:block" id="menu">
+                        <li><a href="#"></a><span class=" text-gray-900 font-bold"><img src="../images/home.png"
+                                    class="w-5 inline-block mb-1 mr-1" alt="home">Home</span></a></li>
+                        <li><a href="#"><span><img src="../images/about.png" class="w-5 inline-block mb-1 mr-1"
+                                        alt="home">About</span></a></li>
+                        <li><a href="#"><span><img src="../images/contact.png" class="w-5 inline-block mb-1 mr-1"
+                                        alt="home">Contact</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <main class="px-16 py-6 bg-gray-100 md:col-span-5">
+            <div style="color:#FF6363;" class="flex justify-center md:justify-end text-sm">
+                <a href="#"
+                    class="btn md:border-2 border-red-400 hover:bg-red-400 hover:text-white transition ease-out duration-500">LOG
+                    IN</a>
+                <a href="#" class="btn md:border-2 border-red-400 hover:bg-red-400 hover:text-white ml-2 transition ease-out duration-500 ">SIGN
+                    UP</a>
+            </div>
+            <header>
+                <h3 class="hover:cursor-pointer text-6xl font-semibold py-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-600 "
+                    style="font-family:'Carter One', 'cursive';">Recipes</h3>
+                <h3 class="text-2xl font-semibold">For Ninjas</h3>
+            </header>
+
+            <div>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+                <div class="mt-8 grid lg:grid-cols-3 gap-10 ">
+                    <!--cards go here-->
+                    <div class="badge hover:shadow-xl">
+                        <img src="../images/stew.jpg" alt="stew" class="w-full h-32 sm:48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">5 Mushroom Chilly Stew</span>
+                            <span class="block font-gray-500 text-sm">Recipe by Mario</span>
+                        </div>
+
+                        <div class="card flex items-center" style="color: #6b6b67; background-color: #E2E2D5;">
+                            <img class="w-6" src="../images/clock.png">
+                            <span>25 MINS</span>
+                        </div>
+                    </div>
+                    <div class="badge hover:shadow-xl">
+                        <img src="../images/noodles.jpg" alt="noodles" class="w-full h-32 sm:48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">4 Onion Capsicum Noodles</span>
+                            <span class="block font-gray-500 text-sm">Recipe by Jian Yang</span>
+                        </div>
+
+                        <div class="card flex items-center" style="color: #6b6b67; background-color: #E2E2D5;">
+                            <img class="w-6" src="../images/clock.png">
+                            <span>
+                                15 MINS</span>
+                        </div>
+                    </div>
+                    <div class="badge hover:shadow-xl">
+                        <img src="../images/curry.jpg" alt="curry" class="w-full h-32 sm:48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">7 Piece Chicken Curry</span>
+                            <span class="block font-gray-500 text-sm">Recipe by Rishi Sunak</span>
+                        </div>
+                        <div class="card flex items-center" style="color: #6b6b67; background-color: #E2E2D5;">
+                            <img class="w-6" src="../images/clock.png">
+                            <span>45 MINS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
+            <div class="mt-8">
+                <!--cards go here-->
+            </div>
+            <div class="flex items-center justify-center">
+                <button type="button" class="flex items-center rounded-full btn hover:shadow-inner transform hover:scale-125 duration-300 hover:opacity-75" style="background-color: #E2E2D5; color: #888883;" disabled="">
+                  <svg class="mr-3 h-5 w-5 animate-spin text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                  <span class="font-medium"> Load More... </span>
+                </button>
+              </div>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
