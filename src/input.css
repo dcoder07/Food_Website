@@ -9,6 +9,15 @@
 .card {
     @apply text-xs font-bold  rounded-full p-2 absolute  top-0 ml-2 mt-3;
 }
+
 .btn {
-    @apply rounded-full uppercase px-3 py-2 cursor-pointer tracking-wider font-bold;
-}
+    cursor: pointer;
+    border-radius: 9999px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }

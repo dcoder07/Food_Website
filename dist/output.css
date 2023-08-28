@@ -556,15 +556,3 @@ video {
   line-height: 1rem;
   font-weight: 700;
 }
-
-.btn {
-  cursor: pointer;
-  border-radius: 9999px;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
