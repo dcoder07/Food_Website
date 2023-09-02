@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.badge{
-    @apply bg-white rounded overflow-hidden shadow-md relative;
-}
-
-.card {
-    @apply text-xs font-bold  rounded-full p-2 absolute  top-0 ml-2 mt-3;
-}
-
 .btn {
     cursor: pointer;
     border-radius: 9999px;
@@ -21,3 +13,27 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
+
+  .badge {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.25rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+  
+  .card {
+    position: absolute;
+    top: 0px;
+    margin-left: 0.5rem;
+    margin-top: 0.75rem;
+    border-radius: 9999px;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+  }
+  
